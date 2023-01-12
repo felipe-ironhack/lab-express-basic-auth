@@ -1,10 +1,10 @@
-<h2> Sign Up</h2>
+<h2> Login </h2>
 
 {{#if errorMessage}}
   <p> {{ errorMessage }} </p>
 {{/if }}
 
-<form action="/auth/signup" method="post">
+<form action="/auth/login" method="post">
   <label> Username:
     <input type="text" name="username" />
   </label>
@@ -13,5 +13,5 @@
     <input type="text" name="pw" :>
   </label>
 
-  <button type="submit"> Sign up </button>
+  <button type="submit"> Login </button>
 </form>
